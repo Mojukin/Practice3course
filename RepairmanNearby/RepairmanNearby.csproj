@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAE7AC5A-7094-4587-9410-FC427FBD86FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RepairmanNearby</RootNamespace>
+    <AssemblyName>RepairmanNearby</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Полезные проги\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>F:\Полезные проги\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAddMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMaster.Designer.cs">
+      <DependentUpon>FormAddMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAutorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutorization.Designer.cs">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreateOrder.Designer.cs">
+      <DependentUpon>FormCreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelMaster.Designer.cs">
+      <DependentUpon>FormDelMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuAdmin.Designer.cs">
+      <DependentUpon>FormMenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuMaster.Designer.cs">
+      <DependentUpon>FormMenuMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenuUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuUsers.Designer.cs">
+      <DependentUpon>FormMenuUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRefactorDataMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRefactorDataMaster.Designer.cs">
+      <DependentUpon>FormRefactorDataMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRefactorDataUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRefactorDataUser.Designer.cs">
+      <DependentUpon>FormRefactorDataUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRefactorOrderByMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRefactorOrderByMaster.Designer.cs">
+      <DependentUpon>FormRefactorOrderByMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistration.Designer.cs">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewMasters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewMasters.Designer.cs">
+      <DependentUpon>FormViewMasters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewUsers.Designer.cs">
+      <DependentUpon>FormViewUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkshopDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkshopDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAddMaster.resx">
+      <DependentUpon>FormAddMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAutorization.resx">
+      <DependentUpon>FormAutorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreateOrder.resx">
+      <DependentUpon>FormCreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelMaster.resx">
+      <DependentUpon>FormDelMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuAdmin.resx">
+      <DependentUpon>FormMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuMaster.resx">
+      <DependentUpon>FormMenuMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuUsers.resx">
+      <DependentUpon>FormMenuUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRefactorDataMaster.resx">
+      <DependentUpon>FormRefactorDataMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRefactorDataUser.resx">
+      <DependentUpon>FormRefactorDataUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRefactorOrderByMaster.resx">
+      <DependentUpon>FormRefactorOrderByMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistration.resx">
+      <DependentUpon>FormRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewMasters.resx">
+      <DependentUpon>FormViewMasters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewUsers.resx">
+      <DependentUpon>FormViewUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WorkshopDataSet.xsc">
+      <DependentUpon>WorkshopDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WorkshopDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkshopDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WorkshopDataSet.xss">
+      <DependentUpon>WorkshopDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backfone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepairmanNearbyIcons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepairmanNearbyIcons.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
